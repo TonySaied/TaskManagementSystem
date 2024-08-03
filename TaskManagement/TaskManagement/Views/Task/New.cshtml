@@ -1,0 +1,33 @@
+﻿@model TaskManagement.Models.Task
+@{
+    ViewData["Title"] = "New";
+}
+
+<h1>New Task</h1>
+<form method="post" class="container">
+    <div>
+        <label asp-for="Name"></label>
+        <input type="text" class="form-control" asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <input type="text" class="form-control" asp-for="Description" />
+    </div>
+    <div>
+        <label asp-for="DueDate"></label>
+        <input type="date" class="form-control" asp-for="DueDate" />
+    </div>
+    <div>
+        <label asp-for="AttachmentPath"></label>
+        <input type="file" class="form-control" asp-for="AttachmentPath" />
+    </div>
+    <div>
+        <label asp-for="ProjectId"></label>
+        <select class="form-control" asp-for="ProjectId" asp-items="ViewBag.ProjectsList"></select>
+        <span asp-validation-for="ProjectId" class="text-danger"></span>
+    </div>
+    <div class="align-content-center pt-2">
+        <button class="btn btn-primary" type="submit">Create</button>
+        <a class="btn btn-outline-secondary" asp-action="Index">Back To List</a>
+    </div>
+</form>

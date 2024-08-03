@@ -1,0 +1,57 @@
+﻿@model List<Project>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h4>Projects List</h4>
+        </div>
+        <div class="col-6 text-end">
+            <a class="btn btn-primary" asp-action="New">New Project</a>
+        </div>
+    </div>
+    <table class="table table-hover table-bordered">
+        <thead class="table-primary">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Tasks</th>
+                <th>Update</th>
+                <th>Delete</th>    
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Proj in Model)
+            {
+                <tr>
+                    <td>@Proj.Id</td>
+                    <td>@Proj.Name</td>
+                    <td>@Proj.Description</td>
+                    <td>
+                        @if (Proj.Tasks != null)//Null safety to avoid exceptions before looping
+                        {
+                            <ul>
+                                @foreach (var task in Proj.Tasks)
+                                {
+                                    <li>
+                                        <strong>@task.Name:</strong> @task.Description
+                                        (Due: @task.DueDate.ToString("dd-MM-yyyy"))
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <span>No tasks assigned</span>
+                        }
+                    </td>
+                    <td><a class="btn btn-primary" asp-action="Update" asp-route-id="@Proj.Id">Update</a></td>
+                    <td><a class="btn btn-danger" asp-action="Delete" asp-route-id="@Proj.Id">Delete</a></td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,30 @@
+﻿@model List<TaskManagement.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Users List</h1>
+<div class="container">
+    <div class="row pt-4 pb-3">
+    </div>
+    <table class="table table-hover table-bordered">
+        <thead class="table-primary">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Task</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Name</td>
+                    <td>@user.Task?.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
