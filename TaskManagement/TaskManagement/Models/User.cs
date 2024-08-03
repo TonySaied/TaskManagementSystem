@@ -7,11 +7,7 @@ namespace TaskManagement.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-        [ForeignKey("Task")]
-        [DisplayName("Task")]
-        public int? TaskId { get; set; }
-        public Task? Task { get; set; }
+        public List<UserTask>? UserTasks { get; set; }
 
     }
 }

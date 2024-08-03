@@ -72,22 +72,35 @@ namespace TaskManagement.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePost(int? id)
         {
-            var Proj = _context.Projects.Find(id);
-            //We Have to delete all assigned tasks first
-            var TaskListForProject=_context.Tasks.Where(i=>i.ProjectId==id).ToList();
-            if (Proj == null)
+            if (id == null)
             {
                 return NotFound();
             }
-            if (ModelState.IsValid)
+
+            // Find the project including its related tasks
+            var project = _context.Projects.Include(p => p.Tasks).FirstOrDefault(p => p.Id == id);
+
+            if (project == null)
             {
-                _context.Tasks.RemoveRange(TaskListForProject);//Removes a List
-                _context.Projects.Remove(Proj);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
+                return NotFound();
             }
-            return View();
+
+            // Retrieve all tasks for this project
+            var tasksForProject = project.Tasks.ToList();
+
+            // Get all UserTasks for the tasks of this project
+            var userTasksForProject = _context.UserTasks
+                .Where(UserTasks => tasksForProject.Select(t => t.Id).Contains(UserTasks.TaskId))
+                .ToList();
+
+            _context.UserTasks.RemoveRange(userTasksForProject);// First remove all UserTasks
+            _context.Tasks.RemoveRange(tasksForProject);// Remove all tasks for this project
+            _context.Projects.Remove(project);// Finally remove project
+
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
+
 
     }
 }

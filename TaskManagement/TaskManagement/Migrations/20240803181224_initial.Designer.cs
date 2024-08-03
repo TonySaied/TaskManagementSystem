@@ -12,8 +12,8 @@ using TaskManagement.Models;
 namespace TaskManagement.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240803154556_i1")]
-    partial class i1
+    [Migration("20240803181224_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -101,6 +101,29 @@ namespace TaskManagement.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("TaskManagement.Models.UserTask", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<int>("TaskId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("TaskId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserTasks");
+                });
+
             modelBuilder.Entity("TaskManagement.Models.Task", b =>
                 {
                     b.HasOne("TaskManagement.Models.Project", "Project")
@@ -114,11 +137,28 @@ namespace TaskManagement.Migrations
 
             modelBuilder.Entity("TaskManagement.Models.User", b =>
                 {
-                    b.HasOne("TaskManagement.Models.Task", "Task")
+                    b.HasOne("TaskManagement.Models.Task", null)
                         .WithMany("Users")
                         .HasForeignKey("TaskId");
+                });
+
+            modelBuilder.Entity("TaskManagement.Models.UserTask", b =>
+                {
+                    b.HasOne("TaskManagement.Models.Task", "Task")
+                        .WithMany()
+                        .HasForeignKey("TaskId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TaskManagement.Models.User", "User")
+                        .WithMany("UserTasks")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Task");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("TaskManagement.Models.Project", b =>
@@ -129,6 +169,11 @@ namespace TaskManagement.Migrations
             modelBuilder.Entity("TaskManagement.Models.Task", b =>
                 {
                     b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("TaskManagement.Models.User", b =>
+                {
+                    b.Navigation("UserTasks");
                 });
 #pragma warning restore 612, 618
         }

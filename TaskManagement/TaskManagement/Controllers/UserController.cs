@@ -13,7 +13,7 @@ namespace TaskManagement.Controllers
         }
         public IActionResult Index()
         {
-            var users = _context.Users.Include(u => u.Task).ToList();
+            var users = _context.Users.ToList();
             return View(users);
         }
 

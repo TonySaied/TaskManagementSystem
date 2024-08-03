@@ -1,12 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace TaskManagement.Models.ViewModel
 {
     public class TaskViewModel
     {
-        public Task Task { get; set; }
-        public SelectList Projects { get; set; }
-        public List<SelectListItem> Users { get; set; }
-        public List<int> SelectedUserIds { get; set; }
+        [Required]
+        public string Name { get; set; }
+
+        public string Description { get; set; }
+
+        [Required]
+        public DateTime DueDate { get; set; }
+
+        public string AttachmentPath { get; set; }
+
+        [Required]
+        public int ProjectId { get; set; }
+
+        // List of selected user IDs
+        public List<int> SelectedUserIds { get; set; } = new List<int>();
     }
 }
