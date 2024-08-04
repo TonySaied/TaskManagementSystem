@@ -66,9 +66,9 @@
                                 <ul>
                                     @foreach (var subtask in task.Subtasks)
                                     {
-                                        <li>
-                                            <strong>@subtask.Name:</strong> @subtask.Description (Due: @subtask.DueDate.ToShortDateString())
-                                        </li>
+                                        
+                                            @subtask.Name
+                                        
                                     }
                                 </ul>
                             }
