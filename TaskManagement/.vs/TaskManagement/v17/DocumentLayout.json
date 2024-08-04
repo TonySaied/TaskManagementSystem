@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\views\\project\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\views\\project\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\controllers\\projectsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\controllers\\projectsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\controllers\\tasksapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\controllers\\tasksapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\views\\task\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\views\\task\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|f:\\self study\\post grad\\gemini media\\taskmanagementsystem\\taskmanagement\\taskmanagement\\models\\viewmodel\\taskviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0913F1-A030-4B44-9E2B-6576A9365DAE}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\models\\viewmodel\\taskviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,80 +46,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index2.cshtml",
-              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Views\\Project\\Index2.cshtml",
-              "RelativeDocumentMoniker": "TaskManagement\\Views\\Project\\Index2.cshtml",
-              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Views\\Project\\Index2.cshtml",
-              "RelativeToolTip": "TaskManagement\\Views\\Project\\Index2.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-04T08:57:16.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProjectController.cs",
-              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Controllers\\ProjectController.cs",
-              "RelativeDocumentMoniker": "TaskManagement\\Controllers\\ProjectController.cs",
-              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Controllers\\ProjectController.cs",
-              "RelativeToolTip": "TaskManagement\\Controllers\\ProjectController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAwwCgAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:38:44.314Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Views\\Task\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\Task\\Index.cshtml",
+              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Views\\Task\\Index.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\Task\\Index.cshtml",
+              "ViewState": "AQIAADgAAAAAAAAAAADwv0UAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-04T11:19:07.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Program.cs",
-              "RelativeDocumentMoniker": "TaskManagement\\Program.cs",
-              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Program.cs",
-              "RelativeToolTip": "TaskManagement\\Program.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Task.cs",
+              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Models\\Task.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Models\\Task.cs",
+              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Models\\Task.cs",
+              "RelativeToolTip": "TaskManagement\\Models\\Task.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAxwBUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:33:31.282Z",
+              "WhenOpened": "2024-08-04T10:58:00.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TaskController.cs",
-              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Controllers\\TaskController.cs",
-              "RelativeDocumentMoniker": "TaskManagement\\Controllers\\TaskController.cs",
-              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Controllers\\TaskController.cs",
-              "RelativeToolTip": "TaskManagement\\Controllers\\TaskController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwBcAAAAtAAAA",
+              "Title": "New.cshtml",
+              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Views\\Task\\New.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\Task\\New.cshtml",
+              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Views\\Task\\New.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\Task\\New.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-04T10:44:25.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskService.cs",
+              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Services\\TaskService.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Services\\TaskService.cs",
+              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Services\\TaskService.cs",
+              "RelativeToolTip": "TaskManagement\\Services\\TaskService.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAiwC0AAAB5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:30:18.712Z",
+              "WhenOpened": "2024-08-04T10:44:14.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TasksAPIController.cs",
-              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Controllers\\TasksAPIController.cs",
-              "RelativeDocumentMoniker": "TaskManagement\\Controllers\\TasksAPIController.cs",
-              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Controllers\\TasksAPIController.cs",
-              "RelativeToolTip": "TaskManagement\\Controllers\\TasksAPIController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Services\\UserService.cs",
+              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Services\\UserService.cs",
+              "RelativeToolTip": "TaskManagement\\Services\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:29:57.858Z",
+              "WhenOpened": "2024-08-04T10:44:10.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProjectsAPIController.cs",
-              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Controllers\\ProjectsAPIController.cs",
-              "RelativeDocumentMoniker": "TaskManagement\\Controllers\\ProjectsAPIController.cs",
-              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Controllers\\ProjectsAPIController.cs",
-              "RelativeToolTip": "TaskManagement\\Controllers\\ProjectsAPIController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAowBkAAAABAAAA",
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Controllers\\TaskController.cs",
+              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "TaskManagement\\Controllers\\TaskController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAuwDMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:29:59.744Z",
+              "WhenOpened": "2024-08-04T10:43:31.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskViewModel.cs",
+              "DocumentMoniker": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Models\\ViewModel\\TaskViewModel.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Models\\ViewModel\\TaskViewModel.cs",
+              "ToolTip": "F:\\Self Study\\Post Grad\\Gemini Media\\TaskManagementSystem\\TaskManagement\\TaskManagement\\Models\\ViewModel\\TaskViewModel.cs",
+              "RelativeToolTip": "TaskManagement\\Models\\ViewModel\\TaskViewModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T10:42:28.579Z",
               "EditorCaption": ""
             }
           ]

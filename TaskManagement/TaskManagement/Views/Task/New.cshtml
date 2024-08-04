@@ -26,12 +26,17 @@
     <div class="form-group">
         <label asp-for="ProjectId"></label>
         <select class="form-control" asp-for="ProjectId" asp-items="ViewBag.ProjectsList"></select>
-        <span asp-validation-for="ProjectId" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="SelectedUserIds">Users</label>
         @Html.ListBoxFor(model => model.SelectedUserIds, (MultiSelectList)ViewBag.UsersList, new { @class = "form-control" })
     </div>
+
+    <div class="form-group">
+        <label asp-for="Subtasks"></label>
+        <select class="form-control" asp-for="Subtasks" asp-items="ViewBag.SubtasksList"></select>
+    </div>
+
     <div class="align-content-center pt-2">
         <button class="btn btn-primary" type="submit">Create</button>
         <a class="btn btn-outline-secondary" asp-action="Index">Back To List</a>

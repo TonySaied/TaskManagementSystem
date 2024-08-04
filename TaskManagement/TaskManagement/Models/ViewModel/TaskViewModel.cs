@@ -17,8 +17,7 @@ namespace TaskManagement.Models.ViewModel
 
         [Required]
         public int ProjectId { get; set; }
-
-        // List of selected user IDs
         public List<int> SelectedUserIds { get; set; } = new List<int>();
+        public List<Subtask> Subtasks { get; set; }
     }
 }

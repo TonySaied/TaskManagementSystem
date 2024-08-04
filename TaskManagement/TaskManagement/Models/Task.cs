@@ -16,7 +16,7 @@ namespace TaskManagement.Models
         [DisplayName("Project")]
         public int ProjectId { get; set; }
         public Project? Project { get; set; }
-        //public List<User>? Users { get; set; }
         public List<UserTask> UserTasks { get; set; }
+        public List<Subtask>? Subtasks { get; set; }
     }
 }

@@ -11,10 +11,12 @@ namespace TaskManagement.Controllers
     public class TaskController : Controller
     {
         private readonly ITaskService _taskService;
+        private readonly ISubtaskService _SubtaskService;
 
-        public TaskController(ITaskService taskService)
+        public TaskController(ITaskService taskService, ISubtaskService SubtaskService)
         {
             _taskService = taskService;
+            _SubtaskService = SubtaskService;
         }
 
         public IActionResult Index(int? userId)
@@ -35,6 +37,7 @@ namespace TaskManagement.Controllers
         {
             ViewBag.ProjectsList = new SelectList(_taskService.GetProjects(), "Id", "Name");
             ViewBag.UsersList = new MultiSelectList(_taskService.GetUsers(), "Id", "Name");
+            ViewBag.SubtasksList = new SelectList(_SubtaskService.GetAll(), "Id", "Name");
             return View();
         }
 
@@ -43,6 +46,8 @@ namespace TaskManagement.Controllers
         public IActionResult New(TaskViewModel taskViewModel)
         {
             ViewBag.ProjectsList = new SelectList(_taskService.GetProjects(), "Id", "Name");
+            ViewBag.UsersList = new MultiSelectList(_taskService.GetUsers(), "Id", "Name");
+            ViewBag.SubtasksList = new SelectList(_SubtaskService.GetAll(), "Id", "Name");
 
             if (ModelState.IsValid)
             {
@@ -52,17 +57,18 @@ namespace TaskManagement.Controllers
                     Description = taskViewModel.Description,
                     DueDate = taskViewModel.DueDate,
                     AttachmentPath = taskViewModel.AttachmentPath,
-                    ProjectId = taskViewModel.ProjectId
+                    ProjectId = taskViewModel.ProjectId,
+                    Subtasks = taskViewModel.Subtasks 
                 };
 
                 _taskService.Insert(task, taskViewModel.SelectedUserIds);
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
 
-            ViewBag.UsersList = new MultiSelectList(_taskService.GetUsers(), "Id", "Name");
             return View(taskViewModel);
         }
+
 
         public IActionResult Delete(int? id)
         {

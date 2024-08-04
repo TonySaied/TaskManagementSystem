@@ -25,10 +25,12 @@ namespace TaskManagement
             builder.Services.AddScoped<IGenericRepository<TaskManagement.Models.Task>, GenericRepository<TaskManagement.Models.Task>>();
             builder.Services.AddScoped<IGenericRepository<TaskManagement.Models.User>, GenericRepository<TaskManagement.Models.User>>();
             builder.Services.AddScoped<IGenericRepository<UserTask>, GenericRepository<UserTask>>();
+            builder.Services.AddScoped<IGenericRepository<Subtask>, GenericRepository<Subtask>>();
 
             builder.Services.AddScoped<IProjectService, ProjectService>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<ITaskService, TaskService>();
+            builder.Services.AddScoped<ISubtaskService, SubtaskService>();
 
             builder.Services.AddAuthentication("CookieAuth")
                 .AddCookie("CookieAuth", config =>

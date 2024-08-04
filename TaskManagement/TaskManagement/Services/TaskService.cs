@@ -43,7 +43,7 @@ namespace TaskManagement.Services
 
         public IEnumerable<TaskManagement.Models.Task> GetAll()
         {
-            return _taskRepository.GetAll().Include(t => t.UserTasks).ThenInclude(ut => ut.User).ToList();
+            return _taskRepository.GetAll().Include(t => t.UserTasks).ThenInclude(ut => ut.User).Include(t => t.Subtasks).ToList();
         }
 
         public TaskManagement.Models.Task GetById(int id)
@@ -62,6 +62,7 @@ namespace TaskManagement.Services
             }
             _userTaskRepository.Save();
         }
+
 
         public IEnumerable<Project> GetProjects()
         {

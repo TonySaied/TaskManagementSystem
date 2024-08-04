@@ -36,6 +36,7 @@
                     <th>Description</th>
                     <th>Due Date</th>
                     <th>Users</th>
+                    <th>Subtasks</th>
                    @*  <th>Update</th> *@
                     <th>Delete</th>
                 </tr>
@@ -55,6 +56,19 @@
                                     @foreach (var userTask in task.UserTasks)
                                     {
                                         <li>@userTask.User.Name</li>
+                                    }
+                                </ul>
+                            }
+                        </td>
+                        <td>
+                            @if (task.Subtasks != null && task.Subtasks.Any())
+                            {
+                                <ul>
+                                    @foreach (var subtask in task.Subtasks)
+                                    {
+                                        <li>
+                                            <strong>@subtask.Name:</strong> @subtask.Description (Due: @subtask.DueDate.ToShortDateString())
+                                        </li>
                                     }
                                 </ul>
                             }

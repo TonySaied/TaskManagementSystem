@@ -16,6 +16,6 @@ namespace TaskManagement.Models
         public DbSet<Task> Tasks { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserTask> UserTasks { get; set; }
-
+        public DbSet<Subtask> Subtasks { get; set; }
     }
 }
