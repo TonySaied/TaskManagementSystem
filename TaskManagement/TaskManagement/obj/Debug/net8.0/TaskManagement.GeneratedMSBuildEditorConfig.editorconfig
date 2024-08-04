@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\Self Study\Post Grad\Gemini Media\TaskManagementSystem\TaskManagement\TaskManagement
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/Self Study/Post Grad/Gemini Media/TaskManagementSystem/TaskManagement/TaskManagement/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Self Study/Post Grad/Gemini Media/TaskManagementSystem/TaskManagement/TaskManagement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/Self Study/Post Grad/Gemini Media/TaskManagementSystem/TaskManagement/TaskManagement/Views/Project/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Self Study/Post Grad/Gemini Media/TaskManagementSystem/TaskManagement/TaskManagement/Views/Project/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxJbmRleDIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Self Study/Post Grad/Gemini Media/TaskManagementSystem/TaskManagement/TaskManagement/Views/Project/New.cshtml]

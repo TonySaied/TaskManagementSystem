@@ -36,7 +36,7 @@
                     <th>Description</th>
                     <th>Due Date</th>
                     <th>Users</th>
-                    <th>Update</th>
+                   @*  <th>Update</th> *@
                     <th>Delete</th>
                 </tr>
             </thead>
@@ -59,7 +59,7 @@
                                 </ul>
                             }
                         </td>
-                        <td><a class="btn btn-primary" asp-action="Update" asp-route-id="@task.Id">Update</a></td>
+                        @* <td><a class="btn btn-primary" asp-action="Update" asp-route-id="@task.Id">Update</a></td> *@
                         <td><a class="btn btn-danger" asp-action="Delete" asp-route-id="@task.Id">Delete</a></td>
                     </tr>
                 }

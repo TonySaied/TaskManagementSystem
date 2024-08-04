@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using TaskManagement.Models;
+using Newtonsoft.Json;
+
+using TaskManagement.Services;
 
 namespace TaskManagement.Controllers
 {
@@ -8,19 +10,28 @@ namespace TaskManagement.Controllers
     [ApiController]
     public class TasksAPIController : ControllerBase
     {
-        ApplicationDbContext _context;
-        public TasksAPIController(ApplicationDbContext context)
+        private readonly ITaskService _taskService;
+
+        public TasksAPIController(ITaskService taskService)
         {
-            _context = context;
+            _taskService = taskService;
         }
-        //https://localhost:7124/api/TasksApi/Overdue?count=2 => Testing Link
+
+        // https://localhost:7124/api/TasksApi/Overdue?count=2 => Testing Link
         [HttpGet("Overdue")]
         public IActionResult GetOverdueTasks(int count)
         {
-            var overdueTasks = _context.Tasks
-                .Where(t => t.DueDate < DateTime.Now).Take(count).ToList();
+            var overdueTasks = _taskService.GetAll()
+                                            .Where(t => t.DueDate < DateTime.Now)
+                                            .Take(count)
+                                            .ToList();
+            //NewtonsoftJson is used to avoid cyclic exception
+            var jsonSettings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
 
-            return Ok(overdueTasks);
+            return new JsonResult(overdueTasks, jsonSettings);
         }
     }
 }

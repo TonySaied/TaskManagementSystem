@@ -1,0 +1,28 @@
+﻿@model List<TaskManagement.Models.Project>
+@{
+    ViewData["Title"] = "Index2";
+}
+
+<h1>Index2</h1>
+<h1>Projects List From Web API</h1>
+
+<table class="table table-hover table-bordered">
+    <thead class="table-primary">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var project in Model)
+        {
+            <tr>
+                <td>@project.Id</td>
+                <td>@project.Name</td>
+                <td>@project.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

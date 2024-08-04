@@ -1,19 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskManagement.Models;
+using TaskManagement.Services;
 
 namespace TaskManagement.Controllers
 {
+    [Authorize]
     public class UserController : Controller
     {
-        ApplicationDbContext _context;
-        public UserController(ApplicationDbContext context)
+        IUserService _userService;
+        public UserController(IUserService userService)
         {
-            _context = context;
+            _userService = userService;
         }
         public IActionResult Index()
         {
-            var users = _context.Users.ToList();
+            var users = _userService.GetAll();
             return View(users);
         }
 
